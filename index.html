@@ -331,7 +331,7 @@
         #lower_parts > div {
             flex: 1 1 calc(95.33% - 15px);
             max-width: calc(95.33% - 15px);
-            min-width: 320px;
+            min-width: 250px;
             text-align: center;
             padding: 35px;
             background-color: #253038;
@@ -358,6 +358,18 @@
             #lower_parts > div {
                 flex: 1 1 100%;
                 max-width: 100%;
+            }
+        }
+
+        /* Mobile View */
+        @media (max-width: 768px) {
+            .book {
+                width: 100%;
+                height: auto;
+                min-height: 250px; /* Adjust height dynamically */
+            }
+            .cover {
+                height: 100%;
             }
         }
 
