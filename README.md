@@ -61,5 +61,25 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For any inquiries or feedback, please reach out to:  
 
-- Email: [your-email@example.com](mailto:your-email@example.com)  
+- Email: [Abdul Ahad](mailto:ahad06074@gmail.com)
+- Email: [Irbaz Ali](i232075@isb.nu.edu.pk)
 - GitHub: [abdulahad968](https://github.com/abdulahad968)
+
+---
+
+## ⚠️ Errors and Omissions
+
+If you encounter any errors, bugs, or have suggestions for improvements, feel free to reach out to me.
+
+You can contact me via email at: [ahad06074@gmail.com](mailto:ahad06074@gmail.com)
+
+Errors and omissions are accepted!
+
+## 🤖 Credits
+
+Built with ❤️ by a passionate team of developers.
+The one and only **Abdul Ahad (^-^)** and **Irbaz ALi (^-^)**.
+Animations from: [Universe.IO](https://uiverse.io/)
+Graffti Powered by: [Flati Icon](https://www.flaticon.com/)
+
+Feel free to **fork**, **contribute**, or **share your thoughts**! 🌟
