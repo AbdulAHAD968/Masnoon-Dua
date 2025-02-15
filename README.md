@@ -62,7 +62,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 For any inquiries or feedback, please reach out to:  
 
 - Email: [Abdul Ahad](mailto:ahad06074@gmail.com)
-- Email: [Irbaz Ali](i232075@isb.nu.edu.pk)
+- Email: [Irbaz Ali](mailto:i232075@isb.nu.edu.pk)
 - GitHub: [abdulahad968](https://github.com/abdulahad968)
 
 ---
