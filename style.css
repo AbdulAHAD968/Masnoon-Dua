@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container_2 {
+    width: 100%;
+    max-width: 1400px;
+    height: 100%;
+    max-height: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%);
+    padding: 2em;
+    border-radius: 4px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    gap: 20px;
+}
+
+/* Arabic text block */
+.container_2 > div:first-child {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5em;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: clamp(1rem, 2vw, 1.5rem); /* Adjusting based on screen size */
+    max-width: 600px;
+    max-height: 430px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(0);
+    transition: transform 0.3s ease-out;
+}
+
+/* Responsive Font Adjustments */
+@media (max-width: 768px) {
+    .container_2 > div:first-child {
+        font-size: 1rem; /* Mobile view ke liye chhota */
+    }
+}
+
+@media (max-width: 480px) {
+    .container_2 > div:first-child {
+        font-size: 0.9rem; /* Chhoti screens ke liye aur reduce */
+    }
+}
+
+
+/* hover animation on first child */
+.container_2 > div:first-child:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(239, 187, 28, 0.88);
+    /* making the animation smooth */
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+
+/* card_2 container_2 */
+.card_2 {
+    width: 210px;
+    height: 254px;
+    border-radius: 8px;
+    background: linear-gradient(43deg, rgb(30, 42, 85) 0%, rgb(120, 40, 120) 46%, rgb(180, 100, 30) 100%);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0.4em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+/* Individual card_2s */
+.card_2 p {
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: flex 0.5s;
+    background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card_2 p:hover {
+    flex: 4;
+}
+
+.card_2 p span {
+    padding: 0.2em;
+    text-align: center;
+    transform: rotate(0deg);
+    transition: transform 0.5s;
+    text-transform: uppercase;
+    color: #333;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    position: relative;
+    z-index: 1;
+}
+
+.card_2 p:hover span {
+    transform: rotate(0);
+}
+
+.card_2 p::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 0;
+    transition: opacity 0.5s;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.card_2 p:hover::before {
+    opacity: 1;
+}
+
+/* ==================== RESPONSIVE DESIGN ==================== */
+
+
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .container_2 {
+        flex-direction: column;
+        padding: 1.5em;
+    }
+
+    .card_2 {
+        width: 180px;
+        height: 220px;
+    }
+
+    .container_2 > div:first-child {
+        max-width: 80%;
+    }
+}
+/* mobile */
+@media (max-width: 768px) {
+    .card_2 {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 0.5em;
+    }
+
+    .card_2 p {
+        width: 100%;
+        min-height: 40px;
+        transition: all 0.5s ease;
+    }
+
+    .card_2 p:hover {
+        min-height: 150px; /* Expand hone ka space milega */
+    }
+}
+
+/* mobile */
+@media (max-width: 390px) {
+    .card_2 {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 0.2em;
+    }
+
+    .card_2 p {
+        width: 100%;
+        min-height: 20px;
+        transition: all 0.5s ease;
+    }
+
+    .card_2 p:hover {
+        min-height: 120px; /* Expand hone ka space milega */
+    }
+}

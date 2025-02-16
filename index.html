@@ -18,7 +18,10 @@
     <meta property="og:description" content="Discover a rich collection of authentic Masnoon Duas for daily life. Strengthen your connection with Allah through Sunnah and Quranic supplications.">
     
     <!-- FAVICON -->
-    <link rel="icon" type="image/png" href="crescent-moon.gif">
+    <link rel="icon" type="image/png" href="1.gif">
+    
+    <!-- CSS STYLING -->
+     <link rel="stylesheet" href="style.css">
 
     <!-- MASTER BRANCH STYLING -->
     <style>
@@ -163,6 +166,10 @@
             background: linear-gradient(43deg, rgb(30, 42, 85) 0%, rgb(120, 40, 120) 46%, rgb(180, 100, 30) 100%);
         }
 
+        body.dark-mode .container_2 {
+            background: linear-gradient(43deg, rgb(30, 42, 85) 0%, rgb(120, 40, 120) 46%, rgb(180, 100, 30) 100%);
+        }
+
         /* When toggled */
         .theme-switch.active::before {
             left: 70px;
@@ -190,7 +197,7 @@
             }
 
             .theme-switch.active::before {
-                left: 25px;
+                left: 43px;
             }
 
             header h1{
@@ -212,7 +219,7 @@
             }
 
             .theme-switch.active::before {
-                left: 35px;
+                left: 24px;
             }
 
             header h1{
@@ -220,44 +227,14 @@
             }
         }
 
-        /* addign a cursor */
-        * {
-            cursor:-moz-grabbing;
-        }
-
-        /* Styling the scroll wheel */
-        body {
-            overflow-y: scroll;
-            scrollbar-width: thin;
-            scrollbar-color: rgb(65, 88, 208) rgb(200, 80, 192);
-            scroll-behavior: smooth;
-        }
-
-        /* Chrome, Edge, Safari */
-        ::-webkit-scrollbar{
-            width: 15px; /* Thin scrollbar */
-            border-radius: 5px;
-            scroll-behavior: smooth;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background-color: rgb(200, 80, 192);
-            border-radius: 4px;
-            scroll-behavior: smooth;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: rgb(65, 88, 208);
-            scroll-behavior: smooth;
-        }
-
-
         /* Footer */
         footer {
             background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%);
             text-align: center;
             padding: 40px;
             border-radius: 4px;
+            display: flex;
+            justify-content: space-around;
         }
 
     </style>
@@ -390,6 +367,39 @@
 
     </style>
 
+    <!-- SCROLL BAR DESIGN -->
+    <style>
+        /* addign a cursor */
+        * {
+            cursor:-moz-grabbing;
+        }
+
+        /* Styling the scroll wheel */
+        body {
+            overflow-y: scroll;
+            scrollbar-width: thin;
+            scrollbar-color: rgb(65, 88, 208) rgb(200, 80, 192);
+            scroll-behavior: smooth;
+        }
+
+        /* Chrome, Edge, Safari */
+        ::-webkit-scrollbar{
+            width: 15px; /* Thin scrollbar */
+            border-radius: 5px;
+            scroll-behavior: smooth;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: rgb(200, 80, 192);
+            border-radius: 4px;
+            scroll-behavior: smooth;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgb(65, 88, 208);
+            scroll-behavior: smooth;
+        }
+    </style>
 
     <!-- BUCKLE TO TOP -->
     <style>
@@ -422,14 +432,126 @@
         }
     </style>
 
+    <!-- FOOTER SECTION -->
+    <style>
+        /* Footer Styling */
+        .footer {
+            display: block;
+            justify-content: space-around;
+            background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+    
+        /* Email Box */
+        .email-box {
+            display: inline-block;
+            padding: 10px 20px;
+            background: linear-gradient(43deg, rgb(30, 42, 85) 0%, rgb(120, 40, 120) 46%, rgb(180, 100, 30) 100%);
+            border-radius: 8px;
+            transition: transform 0.5s ease, background 0.7s ease;
+        }
+    
+        /* Email Link */
+        .email-link {
+            color: rgb(200, 80, 192);
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            transition: color 0.3s ease;
+        }
+    
+        /* Hover Effects */
+        .email-box:hover {
+            transform: translateY(-6px);
+            background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%);
+            /* bg glow */
+            box-shadow: 5px 5px 15px rgba(230, 176, 16, 0.858);
+        }
+    
+        .email-box:hover .email-link {
+            color: rgb(8, 39, 197);
+        }
+
+    </style>
+
+    <!-- CURSOR COLOR SELECTION CHANGE -->
+    <style>
+        ::selection {
+            background-color: rgb(255, 204, 112);
+            color: #333;
+        }
+
+        /* For webkit browsers (Chrome, Safari) */
+        ::-moz-selection {
+            background-color: rgb(255, 204, 112);
+            color: #333;
+        }
+
+        /* For Firefox */
+        ::selection {
+            background-color: rgb(255, 204, 112);
+            color: #333;
+        }
+
+    </style>
+
+
+    <!-- SECOND BUTTON STYLING -->
+    <style>
+
+        /* Button inside Header */
+        .scroll-btn {
+            position: fixed;
+            top: 109px;
+            left: 10px;
+            background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%);
+            color: white;
+            padding: 6px 10px;
+            border: none;
+            border-radius: 9px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
+            z-index: 3;
+        }
+
+        /* Hover Effect */
+        .scroll-btn:hover {
+            transform: scale(1.08);
+            filter: brightness(1.1);
+            box-shadow: 2px 2px 5px rgba(253, 194, 33, 0.9);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 700px) {
+            .scroll-btn {
+                padding: 5px 8px;
+                font-size: 0.75rem;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .scroll-btn {
+                padding: 4px 6px;
+                font-size: 0.7rem;
+                border-radius: 3px;
+            }
+        }
+
+    </style>
+
 
 </head>
 <body>
 
     <!-- Header -->
     <header>
-        <img src="crescent-moon.gif" alt="Logo" height="5%" width="5%" style="border-radius: 20%;">
-        <h1>Basic Dua's being a Muslim we must know.</h1>
+        <img src="window.gif" alt="Logo" height="5%" width="5%" style="border-radius: 20%;">
+        <h1><em>Basic Duas Being A Muslim We Must Learn.</em></h1>
         <div class="theme-switch" onclick="toggleTheme()"></div>
     </header>
 
@@ -478,9 +600,16 @@
 
     </div>
 
-
     <!-- FIRST SECTION DEFINITION - BASICALLY EDUCATION RELEVANT DUA'S -->
-    <div id="section1"></div><br><br><br><br><br><br><br>
+    <div id="section1" style="display: flex; justify-content: space-around; align-items: center; text-align: center; padding: 20px; background: rgba(255, 255, 255, 0.1); border-radius: 10px;">
+        <p style="font-size: 30px; font-weight: bold; color: #c850c8; text-transform: uppercase; margin: 0;">
+            <u>Education</u> 
+        </p>
+        <p style="font-size: 30px; color: #fcc92e; font-family: 'Noto Nastaliq Urdu', serif; margin: 0;">
+            علم اور ہدایت کی دعائیں
+        </p>
+    </div>
+
     <div id="lower_parts">
         
         <!-- first -->
@@ -567,7 +696,15 @@
 
 
     <!-- SECOND SECTION DEFINITION - BASICALLY EAT/DRINK RELEVANT DUA'S -->
-    <div id="section2"></div><br><br><br><br><br><br><br>
+    <div id="section2" style="display: flex; justify-content: space-around; align-items: center; text-align: center; padding: 20px; background: rgba(255, 255, 255, 0.1); border-radius: 10px;">
+        <p style="font-size: 30px; font-weight: bold; color: #c850c8; text-transform: uppercase; margin: 0;">
+            <u>Eat/Drink</u> 
+        </p>
+        <p style="font-size: 30px; color: #fcc92e; font-family: 'Noto Nastaliq Urdu', serif; margin: 0;">
+            <span>کھانے پینے سے پہلے اور بعد کی دعا</span>
+        </p>
+    </div>
+
     <div id="lower_parts">
         
         <!-- first -->
@@ -682,7 +819,14 @@
 
 
     <!-- THIRD SECTION DEFINITION - BASICALLY CLOTHINGS RELEVANT DUA'S -->
-    <div id="section3"></div><br><br><br><br><br><br><br>
+    <div id="section3" style="display: flex; justify-content: space-around; align-items: center; text-align: center; padding: 20px; background: rgba(255, 255, 255, 0.1); border-radius: 10px;">
+        <p style="font-size: 30px; font-weight: bold; color: #c850c8; text-transform: uppercase; margin: 0;">
+            <u>Clothings</u> 
+        </p>
+        <p style="font-size: 30px; color: #fcc92e; font-family: 'Noto Nastaliq Urdu', serif; margin: 0;">
+            <span>کپڑے پہننے اور اتارنے کی دعائیں</span>
+        </p>
+    </div>
     
     <div id="lower_parts">
         
@@ -738,7 +882,14 @@
 
 
     <!-- FOURTH SECTION DEFINITION - TRAVELLING RELEVANT DUA'S -->
-    <div id="section4"></div><br><br><br><br><br><br><br>
+    <div id="section4" style="display: flex; justify-content: space-around; align-items: center; text-align: center; padding: 20px; background: rgba(255, 255, 255, 0.1); border-radius: 10px;">
+        <p style="font-size: 30px; font-weight: bold; color: #c850c8; text-transform: uppercase; margin: 0;">
+            <u>Travelling</u> 
+        </p>
+        <p style="font-size: 30px; color: #fcc92e; font-family: 'Noto Nastaliq Urdu', serif; margin: 0;">
+            <span>سفر کی دعائیں</span>
+        </p>
+    </div>
     <div id="lower_parts">
         
         <!-- first -->
@@ -858,7 +1009,14 @@
 
 
     <!-- FIFTH SECTION DEFINITION - DUA'S RELEVANT FOR SHIFA, HEALTH, CURE-->
-    <div id="section5"></div><br><br><br><br><br><br><br>
+    <div id="section5" style="display: flex; justify-content: space-around; align-items: center; text-align: center; padding: 20px; background: rgba(255, 255, 255, 0.1); border-radius: 10px;">
+        <p style="font-size: 30px; font-weight: bold; color: #c850c8; text-transform: uppercase; margin: 0;">
+            <u>Health & Sickness</u> 
+        </p>
+        <p style="font-size: 30px; color: #fcc92e; font-family: 'Noto Nastaliq Urdu', serif; margin: 0;">
+            <span>تندرستی، بیماری اور شفا کی دعائیں</span>
+        </p>
+    </div>
     <div id="lower_parts">
         
         <!-- first -->
@@ -929,7 +1087,14 @@
     
 
     <!-- SIXTH SECTION DEFINITION - BASIC EVERDAY ROUTINE -->
-    <div id="section6"></div><br><br><br><br><br><br><br>
+    <div id="section6" style="display: flex; justify-content: space-around; align-items: center; text-align: center; padding: 20px; background: rgba(255, 255, 255, 0.1); border-radius: 10px;">
+        <p style="font-size: 30px; font-weight: bold; color: #c850c8; text-transform: uppercase; margin: 0;">
+            <u>Daily Routine</u>
+        </p>
+        <p style="font-size: 30px; color: #fcc92e; font-family: 'Noto Nastaliq Urdu', serif; margin: 0;">
+            <span>سونے، جاگنے، گھر سے نکلنے اور گھر آنے کی دعائیں</span>
+        </p>
+    </div>
     <div id="lower_parts">
         
         <!-- first -->
@@ -1033,8 +1198,15 @@
     </div>
 
 
-    <!-- SEVENTH SECTION DEFINITION -  -->
-    <div id="section7"></div><br><br><br><br><br><br><br>
+    <!-- SEVENTH SECTION DEFINITION - Worship (Ibadah) -->
+    <div id="section7" style="display: flex; justify-content: space-around; align-items: center; text-align: center; padding: 20px; background: rgba(255, 255, 255, 0.1); border-radius: 10px;">
+        <p style="font-size: 30px; font-weight: bold; color: #c850c8; text-transform: uppercase; margin: 0;">
+            <u>Worship (Ibadah)</u> 
+        </p>
+        <p style="font-size: 30px; color: #fcc92e; font-family: 'Noto Nastaliq Urdu', serif; margin: 0;">
+            <span>نماز، روزہ، قرآن اور عبادت سے متعلق دعائیں</span>
+        </p>
+    </div>
     <div id="lower_parts">
         
         <!-- FIRST -->
@@ -1201,8 +1373,15 @@
     </div>
 
 
-    <!-- EIGHTH SECTION DEFINITION -->
-    <div id="section8"></div><br><br><br><br><br><br><br>
+    <!-- EIGHTH SECTION DEFINITION - PROTECTION -->
+    <div id="section8" style="display: flex; justify-content: space-around; align-items: center; text-align: center; padding: 20px; background: rgba(255, 255, 255, 0.1); border-radius: 10px;">
+        <p style="font-size: 30px; font-weight: bold; color: #c850c8; text-transform: uppercase; margin: 0;">
+            <u>Protection</u> 
+        </p>
+        <p style="font-size: 30px; color: #fcc92e; font-family: 'Noto Nastaliq Urdu', serif; margin: 0;">
+            <span>ہر طرح کی آفات اور مشکلات سے بچنے کی دعائیں</span>
+        </p>
+    </div>
     <div id="lower_parts">
 
         <!-- FIRST -->
@@ -1318,8 +1497,15 @@
     </div>
 
 
-    <!-- NINETH SECTION DEFINITION -->
-    <div id="section9"></div><br><br><br><br><br><br><br>
+    <!-- NINETH SECTION DEFINITION - Social & Family Life -->
+    <div id="section9" style="display: flex; justify-content: space-around; align-items: center; text-align: center; padding: 20px; background: rgba(255, 255, 255, 0.1); border-radius: 10px;">
+        <p style="font-size: 30px; font-weight: bold; color: #c850c8; text-transform: uppercase; margin: 0;">
+            <u>Social & Family Life</u> 
+        </p>
+        <p style="font-size: 30px; color: #fcc92e; font-family: 'Noto Nastaliq Urdu', serif; margin: 0;">
+            <span>والدین، رشتہ داروں، دوستوں اور گھر والوں کے لیے دعائیں</span>
+        </p>
+    </div>
     <div id="lower_parts">
         
         <!-- FIRST -->
@@ -1376,7 +1562,14 @@
 
 
     <!-- TENTH SECTION DEFINITION -->
-    <div id="section10"></div><br><br><br><br><br><br><br>
+    <div id="section10" style="display: flex; justify-content: space-around; align-items: center; text-align: center; padding: 20px; background: rgba(255, 255, 255, 0.1); border-radius: 10px;">
+        <p style="font-size: 30px; font-weight: bold; color: #c850c8; text-transform: uppercase; margin: 0;">
+            <u>Death & Afterlife</u> 
+        </p>
+        <p style="font-size: 30px; color: #fcc92e; font-family: 'Noto Nastaliq Urdu', serif; margin: 0;">
+            <span>میت، مغفرت، قبر اور آخرت کی دعائیں</span>
+        </p>
+    </div>
     <div id="lower_parts">
         
         <!-- FIRST -->
@@ -1511,9 +1704,46 @@
     </div>
 
 
+    <!-- MESSAGE FOR ALL -->
+    <div id="container_2" class="container_2">
+        <div>
+            <p>
+                خَيْرُكُمْ مَن تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ <br>
+                <span><em>"The best among you are those who learn the QURAN and teach it."</em></span><br>
+                <span>
+                    "تم میں سب سے بہترین وہ ہیں جو قرآن کو سیکھیں اور پھر اسے سکھائیں"
+                </span>
+                <br>
+                <span style="font-size: medium;">📖 Reference: (Sahih al-Bukhari, 5027)</span>
+            </p>
+        </div>
+        <div class="card_2">
+            <p><span>LEARN (سیکھیں)</span></p>
+            <p><span>SPREAD (پھیلائیں)</span></p>
+            <p><span>EMPOWER (بااختیار بنائیں)</span></p>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer>
-        <p>&copy; <span> 2025 ZAR.INC All rights reserved.</span></p>
+
+        <div class="container">
+            
+            <!-- Email Box -->
+            <div class="email-box">
+                <p><em>Contact us:</em>  
+                    <a href="mailto:ab.zarinc@gmail.com" class="email-link">ab.zarinc@gmail.com</a>
+                </p>
+            </div>
+
+            <hr style="width: 60%; height: 4px; background: linear-gradient(to right, #ffcc70, #c850c8, #4158d0); border: none; border-radius: 5px; margin: 20px auto;">
+
+            <div>
+                <p>&copy; <span>2025 ZAR.INC All rights reserved.</span></p>
+            </div>
+    
+        </div>
+    
     </footer>
 
 
@@ -1558,15 +1788,20 @@
     <button id="scrollToTop" onclick="scrollToTop()">↑ Top</button>
 
 
-    <!-- Scroll to Top Button -->
+    <!-- MESSAGE BUTTON -->
+    <button class="scroll-btn" onclick="scrollToBookmarks()">Message</button>
+
+
+    <!-- SCROLL TO TOP BUTTON -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             let scrollToTopBtn = document.getElementById("scrollToTop");
 
             window.addEventListener("scroll", function() {
-                if (window.scrollY > 100) {
+                if(window.scrollY > 600){
                     scrollToTopBtn.classList.add("show");
-                } else {
+                }
+                else{
                     scrollToTopBtn.classList.remove("show");
                 }
             });
@@ -1576,6 +1811,17 @@
             });
         });
 
+    </script>
+
+
+    <!-- SCROLL TO OUR_GOAL PORTION -->
+    <script>
+        /* JavaScript for Smooth Scroll */
+        function scrollToBookmarks() {
+            document.getElementById("container_2").scrollIntoView({
+                behavior: "smooth"
+            });
+        }
     </script>
 
 
