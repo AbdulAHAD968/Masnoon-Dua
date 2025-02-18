@@ -413,7 +413,7 @@
             padding: 12px 18px;
             font-size: 18px;
             cursor: pointer;
-            border-radius: 15px;
+            border-radius: 10px;
             transition: all 0.3s ease-in-out;
             opacity: 0;
             z-index: 1000;
@@ -1997,8 +1997,8 @@
                 let centerX = rect.width / 2;
                 let centerY = rect.height / 2;
 
-                let rotateX = (centerY - y) / 6;
-                let rotateY = (x - centerX) / 6;
+                let rotateX = (centerY - y) / 5;
+                let rotateY = (x - centerX) / 5;
 
                 card.style.transform = `perspective(500px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
             });
@@ -2054,6 +2054,30 @@
             });
         }
     </script>
+
+
+
+    <!-- STOP INSPECT. -->
+    <script>
+        document.addEventListener("contextmenu", function(event) {
+            event.preventDefault();
+        });
+    </script>
+
+
+    <!-- DISABLE ALL THE SHORTCUTS. -->
+    <script>
+        document.addEventListener("keydown", function(event) {
+            if (event.ctrlKey && (event.key === "u" || event.key === "s" || event.key === "i" || event.key === "j")) {
+                event.preventDefault();
+            }
+            if (event.key === "F12") {
+                event.preventDefault();
+            }
+        });
+    </script>
+
+
 
 
 </body>
