@@ -1,7 +1,7 @@
 
 # Masnoon Dua  
 
-<img src="cover-image.PNG">The cover image.</img>
+<img src="cover-image.PNG" alt="The cover image">
 
 A simple web application that provides users with a collection of Masnoon Duas (supplications) for daily use. This project aims to make it easy for anyone to access these spiritual prayers conveniently.  
 
