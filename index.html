@@ -180,7 +180,7 @@
 
         /* When toggled */
         .theme-switch.active::before {
-            left: 70px;
+            left: 65px;
             background: linear-gradient(315deg, #000000 0%, #414141 70%);
         }
 
@@ -227,7 +227,7 @@
             }
 
             .theme-switch.active::before {
-                left: 24px;
+                left: 20px;
             }
 
             header h1{
@@ -2203,36 +2203,7 @@
     </script>
 
 
-    <!-- STOP RIGHT CLICK. -->
-    <script>
-        document.addEventListener("contextmenu", function(event) {
-            event.preventDefault();
-        });
-    </script>
-
-
-    <!-- DISABLE ALL THE KEYBOARD SHORTCUTS [FOR NON TECHNICAL PEOPLE, TECHNICAL PEOPLE DO HAVE ACCESS USING ADVANCE TOOLS] -->
-    <script>
-        document.addEventListener("keydown", function(event) {
-            if (event.ctrlKey && (event.key === "u" || event.key === "s" || event.key === "i" || event.key === "j")) {
-                event.preventDefault();
-            }
-            if (event.key === "F12") {
-                event.preventDefault();
-            }
-        });
-
-        document.addEventListener("keydown", function(event) {
-            if (
-                (event.ctrlKey && event.shiftKey && (event.key === "I" || event.key === "J" || event.key === "C")) || // Ctrl+Shift+I/J/C
-                (event.ctrlKey && event.key === "U") || // Ctrl+U
-                (event.key === "F12") // F12
-            ) {
-                event.preventDefault();
-            }
-        });
-    </script>
-
+    
 
 
 
