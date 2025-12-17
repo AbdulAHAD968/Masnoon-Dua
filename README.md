@@ -71,7 +71,7 @@ For any inquiries or feedback, please reach out to:
 
 ---
 
-## ⚠️ Errors and Omissions
+## Errors and Omissions
 
 If you encounter any errors, bugs, or have suggestions for improvements, feel free to reach out to me.
 
@@ -79,11 +79,11 @@ You can contact me via email at: [ahad06074@gmail.com](mailto:ahad06074@gmail.co
 
 Errors and omissions are accepted!
 
-## 🤖 Credits
+## Credits
 
 Built with ❤️ by a passionate team of developers.
-The one and only **Abdul Ahad (^-^)** and **Irbaz ALi (^-^)**.
+**Abdul Ahad (^-^)** and **Irbaz ALi (^-^)**.
 Animations from: [Universe.IO](https://uiverse.io/)
 Graffti Powered by: [Flati Icon](https://www.flaticon.com/)
 
-Feel free to **fork**, **contribute**, or **share your thoughts**! 🌟
+Feel free to **fork**, **contribute**, or **share your thoughts**!
